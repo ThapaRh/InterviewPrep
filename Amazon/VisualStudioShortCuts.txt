@@ -1,0 +1,2 @@
+How do i turn on/off this autocompletion on VS code ???
+In the bottom right there's the copilot logo. Click on it and uncheck "Code Completions (all files)".
