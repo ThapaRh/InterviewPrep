@@ -6,6 +6,14 @@ Example 1:
 Input: board = [["o","a","a","n"],["e","t","a","e"],["i","h","k","r"],["i","f","l","v"]], words = ["oath","pea","eat","rain"]
 Output: ["eat","oath"]
 We search for word in a grid of characters, where each character can be used only once in a word.
+Tc: m*n* 4^(m*n)
+SC: S
+Where 
+m is the number of rows, 
+n is the number of columns, 
+t is the maximum length of any word in the array 
+words and 
+s is the sum of the lengths of all the words.
 '''
 #follow up: how to remove elements from trie
 class TrieNode:
