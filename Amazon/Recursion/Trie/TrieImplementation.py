@@ -5,6 +5,8 @@ First node is the root node, which is empty and does not contain any character.
 
 It is particularly useful for tasks like autocomplete, spell checking, and IP routing.
 This implementation provides basic functionalities of a Trie, including insertion, search, and deletion of words.
+
+TC for search, insert and find_prefixes is all O(m) where m is the length of the word/prefix being searched/inserted.
 '''
 class TrieNode:
     def __init__(self):
