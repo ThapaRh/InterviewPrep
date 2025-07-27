@@ -38,14 +38,14 @@ class Solution:
                 curr=curr.next
                 count-=1
             print(count)
-            if not curr:
+            if not curr: #i made a mistake here where I did k!=0 instead of not curr, be careful
                 break
             print(curr)
             oldNext = curr.next #-1->1->2->3->4->  oldNext = 3, 5
             reversedNode = reverseNode(head,k,oldNext) # 2->1->3->4->5       4-3-5
             oldPrev.next = reversedNode #-1->2->1->3->4->5    1->4->3->5
             oldPrev = head #1 , 3
-            curr = head #1 , 3
+            curr = head #1 , 3   #made mistake here I had this line and the line below swapped which caused issues
             head = oldNext #3, 5
         return dummy.next
             
