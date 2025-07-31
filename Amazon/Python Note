@@ -1,0 +1,22 @@
+'''there is fundamental difference between variable assignment and mutation
+if outside of a function we have a variable arr and we reassign it inside funxtction new arr will be created'''
+
+def func():
+    arr = []
+    def test():
+        arr = [123]
+        print(arr) # this will print internal arr
+    test()
+    print(arr) #print empty list
+
+func()
+
+def func2():
+    arr = [1]
+    def test():
+        arr.extend([1,2,3])
+        print(arr) #prints extended with original
+    test()
+    print(arr)#now since the mutation happened we print updated arr
+
+func2()
